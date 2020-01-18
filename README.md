@@ -1,1 +1,1 @@
-# Ping-science-fair
+To run each program, open cmd and cd into the file directory of the program. Then if you have python 3.5 or later, run the python command and type "import (filename)" The only program that is runnable (except this file) is ping.py. Ping.py reads IP adresses from IP.py that go to aws servers.
