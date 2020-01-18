@@ -2,21 +2,16 @@ import imp
 import subprocess
 import os
 import time
-from datetime import datetime
-
-now = datetime.now()
-
-current_time = now.strftime("%H:%M:%S")
 
 def Ping(IP):
-    return subprocess.check_output("Ping " + IP + " -n 1").decode()
+    return subprocess.check_output("ping " + IP + " -n 1", shell=True).decode()
 
 def Readipfromcountry(filename, Country):
     return getVarFromFile(Country, filename)
 
 def writeresult(Time, Country, File):
     with open(File, "a") as f:
-        print("{0}, {1}, {2}".format(Time, Country, current_time), file = f)
+        print("{0}, {1}".format(Time, Country), file = f)
 
 def ParseTimefromPingOutput(PingOutput):
      X = PingOutput.split(",")
@@ -32,8 +27,8 @@ def GetAllCountries(Filename):
     data = imp.load_source('data', Filename)
     return data.IPs.keys()
 
-OutputFile = "C:/Users/Admin/Downloads/Time.txt"
-InputFile = "C:/Users/Admin/AppData/Local/atom/app-1.42.0/IP.py"
+OutputFile = "Time.txt"
+InputFile = "IP.py"
 if os.path.exists(OutputFile):
   os.remove(OutputFile)
 
