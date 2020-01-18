@@ -36,7 +36,7 @@ if os.path.exists(OutputFile):
   os.remove(OutputFile)
 
 #Get list of all countries
-for H in range(10):
+while True:
     for Country in GetAllCountries(InputFile):
         #Read IP addresses for a single county from IP.py
         IP = Readipfromcountry(InputFile, Country)
@@ -48,4 +48,3 @@ for H in range(10):
             Time = ParseTimefromPingOutput(PingOutput)
             #Write ping time to .txt file (ms)
             writeresult(Time, Country, OutputFile)
-    time.sleep(60*60)
