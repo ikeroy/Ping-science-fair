@@ -2,6 +2,9 @@ import imp
 import subprocess
 import os
 import time
+from datetime import datetime
+
+start_time = datedame.now().strftime("%H:%M:%S")
 
 def Ping(IP):
     return subprocess.check_output("ping " + IP + " -n 1", shell=True).decode()
@@ -11,7 +14,7 @@ def Readipfromcountry(filename, Country):
 
 def writeresult(Time, Country, File):
     with open(File, "a") as f:
-        print("{0}, {1}".format(Time, Country), file = f)
+        print("{0}, {1}, {2}".format(Time, Country, datetime.now()), file = f)
 
 def ParseTimefromPingOutput(PingOutput):
      X = PingOutput.split(",")
