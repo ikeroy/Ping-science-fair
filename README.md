@@ -50,8 +50,8 @@ To detach, type `ctrl-a, ctrl-d`
 ||b||ec2-18-138-58-21.ap-southeast-1.compute.amazonaws.com|
 ||c||ec2-18-138-228-155.ap-southeast-1.compute.amazonaws.com|
 |N.Virginia|a||ec2-54-90-215-1.compute-1.amazonaws.com|
-||b|||
-||c|||
+||b||ec2-54-91-16-137.compute-1.amazonaws.com|
+||c||ec2-3-214-143-16.compute-1.amazonaws.com|
 |Tokyo|a||ec2-3-112-220-162.ap-northeast-1.compute.amazonaws.com|
 ||c||ec2-18-182-38-146.ap-northeast-1.compute.amazonaws.com|
 ||d||ec2-18-177-153-44.ap-northeast-1.compute.amazonaws.com|
