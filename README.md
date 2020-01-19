@@ -65,7 +65,7 @@ For ec2s
 
 This oughta do it
 ```
-scp -i sydney.pem ec2-user@ec2-52-63-89-125.ap-southeast-2.compute.amazonaws.com:Ping-science-fair/Time.txt ./sydney-a-Time.txt
+bash -c 'scp -i sydney.pem ec2-user@ec2-52-63-89-125.ap-southeast-2.compute.amazonaws.com:Ping-science-fair/Time.txt ./sydney-a-Time.txt
 scp -i sydney.pem ec2-user@ec2-54-252-150-92.ap-southeast-2.compute.amazonaws.com:Ping-science-fair/Time.txt ./sydney-b-Time.txt
 scp -i sydney.pem ec2-user@ec2-54-252-153-177.ap-southeast-2.compute.amazonaws.com:Ping-science-fair/Time.txt ./sydney-c-Time.txt
 scp -i sao-paulo.pem ec2-user@ec2-18-231-118-175.sa-east-1.compute.amazonaws.com:Ping-science-fair/Time.txt ./sao-paulo-a-Time.txt
@@ -88,5 +88,5 @@ scp -i Virginia.pem ec2-user@ec2-54-91-16-137.compute-1.amazonaws.com:Ping-scien
 scp -i Virginia.pem ec2-user@ec2-3-214-143-16.compute-1.amazonaws.com:Ping-science-fair/Time.txt ./Virginia-c-Time.txt
 scp -i TokYo.pem ec2-user@ec2-3-112-220-162.ap-northeast-1.compute.amazonaws.com:Ping-science-fair/Time.txt ./Tokyo-a-Time.txt
 scp -i TokYo.pem ec2-user@ec2-18-182-38-146.ap-northeast-1.compute.amazonaws.com:Ping-science-fair/Time.txt ./Tokyo-c-Time.txt
-scp -i TokYo.pem ec2-user@ec2-18-177-153-44.ap-northeast-1.compute.amazonaws.com:Ping-science-fair/Time.txt ./Tokyo-d-Time.txt
+scp -i TokYo.pem ec2-user@ec2-18-177-153-44.ap-northeast-1.compute.amazonaws.com:Ping-science-fair/Time.txt ./Tokyo-d-Time.txt'
 ```
