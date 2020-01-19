@@ -12,9 +12,8 @@ First check if it is already running
 
 If `screen` doesn't return anything, check if git and python3 are installed. If they aren't, here's how to set it up
 ```
-sudo yum -y install git
+sudo yum -y install git python3
 git clone https://github.com/ikeroy/Ping-science-fair.git
-sudo yum -y install python3
 ```
 
 When running the program, use screen so you can disconnect and it will keep running
