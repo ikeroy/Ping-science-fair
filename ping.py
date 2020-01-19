@@ -3,11 +3,13 @@ import subprocess
 import os
 import time
 from datetime import datetime
-
-start_time = datedame.now().strftime("%H:%M:%S")
+import platform
 
 def Ping(IP):
-    return subprocess.check_output("ping " + IP + " -n 1", shell=True).decode()
+    if platform.system() == 'Windows':
+        return subprocess.check_output("ping " + IP + " -n 1", shell=True).decode()
+    else:
+        return subprocess.check_output("ping " + IP + " -c 1", shell=True).decode()
 
 def Readipfromcountry(filename, Country):
     return getVarFromFile(Country, filename)
@@ -18,9 +20,15 @@ def writeresult(Time, Country, File):
 
 def ParseTimefromPingOutput(PingOutput):
      X = PingOutput.split(",")
-     Y = X[5].split(" = ")
-     XX = Y[1].split("ms")
-     return int(XX[0])
+     if platform.system() == 'Windows':
+        Y = X[5].split(" = ")
+        XX = Y[1].split("ms")
+        return int(XX[0])
+     else:
+        y = X[3]
+        z = y.split(' = ')[1]
+        return float(z.split('/')[2])
+
 
 def getVarFromFile(Country, filename):
     data = imp.load_source('data', filename)
@@ -38,6 +46,7 @@ if os.path.exists(OutputFile):
 #Get list of all countries
 while True:
     for Country in GetAllCountries(InputFile):
+        print("pinging " + Country)
         #Read IP addresses for a single county from IP.py
         IP = Readipfromcountry(InputFile, Country)
 
