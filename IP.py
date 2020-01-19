@@ -3,7 +3,7 @@
 #Each IP address is known to work
 IPs = {}
 
-IPs["Austin"] = ['136.49.138.91']
+IPs["Austin"] = ['136.49.138.91','72.182.8.175']
 
 IPs["Mubai"] = ['15.206.80.139', '13.235.87.222']
 
