@@ -50,7 +50,7 @@ To detach, type `ctrl-a, ctrl-d`
 |Singapore|a||ec2-52-77-217-241.ap-southeast-1.compute.amazonaws.com|
 ||b||ec2-18-138-58-21.ap-southeast-1.compute.amazonaws.com|
 ||c||ec2-18-138-228-155.ap-southeast-1.compute.amazonaws.com|
-|N.Virginia|a|||
+|N.Virginia|a||ec2-54-90-215-1.compute-1.amazonaws.com|
 ||b|||
 ||c|||
 |Tokyo|a||ec2-3-112-220-162.ap-northeast-1.compute.amazonaws.com|
