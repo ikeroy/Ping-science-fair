@@ -1,0 +1,9 @@
+8,965 Mumbai
+8,464 Sydney
+6,543 Tokyo
+1,377 Virginia
+1,948 Montreal
+5,027 Sao Paulo
+8,226 Hong Kong
+4,912 London
+9,825 Singapore
