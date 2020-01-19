@@ -41,20 +41,20 @@ To detach, type `ctrl-a, ctrl-d`
 ||c|18.163.73.210|ec2-18-163-73-210.ap-east-1.compute.amazonaws.com|
 |Mumbai|a|15.206.80.139|ec2-15-206-80-139.ap-south-1.compute.amazonaws.com|
 ||b|13.235.87.222|ec2-13-235-87-222.ap-south-1.compute.amazonaws.com|
-|London|a||ec2-3-10-180-172.eu-west-2.compute.amazonaws.com|
-||b||ec2-3-9-181-152.eu-west-2.compute.amazonaws.com|
-||c||ec2-3-11-81-223.eu-west-2.compute.amazonaws.com|
-|Montreal|a||ec2-15-222-15-243.ca-central-1.compute.amazonaws.com|
-||b||ec2-35-183-41-84.ca-central-1.compute.amazonaws.com|
-|Singapore|a||ec2-52-77-217-241.ap-southeast-1.compute.amazonaws.com|
-||b||ec2-18-138-58-21.ap-southeast-1.compute.amazonaws.com|
-||c||ec2-18-138-228-155.ap-southeast-1.compute.amazonaws.com|
-|N.Virginia|a||ec2-54-90-215-1.compute-1.amazonaws.com|
-||b||ec2-54-91-16-137.compute-1.amazonaws.com|
-||c||ec2-3-214-143-16.compute-1.amazonaws.com|
-|Tokyo|a||ec2-3-112-220-162.ap-northeast-1.compute.amazonaws.com|
-||c||ec2-18-182-38-146.ap-northeast-1.compute.amazonaws.com|
-||d||ec2-18-177-153-44.ap-northeast-1.compute.amazonaws.com|
+|London|a|3.10.180.172|ec2-3-10-180-172.eu-west-2.compute.amazonaws.com|
+||b|3.9.181.152|ec2-3-9-181-152.eu-west-2.compute.amazonaws.com|
+||c|3.11.81.223|ec2-3-11-81-223.eu-west-2.compute.amazonaws.com|
+|Montreal|a|15.222.15.243|ec2-15-222-15-243.ca-central-1.compute.amazonaws.com|
+||b|35.183.41.84|ec2-35-183-41-84.ca-central-1.compute.amazonaws.com|
+|Singapore|a|52.77.217.241|ec2-52-77-217-241.ap-southeast-1.compute.amazonaws.com|
+||b|18.138.58.21|ec2-18-138-58-21.ap-southeast-1.compute.amazonaws.com|
+||c|18.138.228.155|ec2-18-138-228-155.ap-southeast-1.compute.amazonaws.com|
+|N.Virginia|a|54.90.215.1|ec2-54-90-215-1.compute-1.amazonaws.com|
+||b|54.91.16.137|ec2-54-91-16-137.compute-1.amazonaws.com|
+||c|3.214.143.16|ec2-3-214-143-16.compute-1.amazonaws.com|
+|Tokyo|a|3.112.220.162|ec2-3-112-220-162.ap-northeast-1.compute.amazonaws.com|
+||c|18.182.38.146|ec2-18-182-38-146.ap-northeast-1.compute.amazonaws.com|
+||d|18.177.153.44|ec2-18-177-153-44.ap-northeast-1.compute.amazonaws.com|
 
 ## Gathering results
 For ec2s
