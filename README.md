@@ -42,13 +42,12 @@ To detach, type `ctrl-a, ctrl-d`
 ||c|18.163.73.210|ec2-18-163-73-210.ap-east-1.compute.amazonaws.com|
 |Mumbai|a|15.206.80.139|ec2-15-206-80-139.ap-south-1.compute.amazonaws.com|
 ||b|13.235.87.222|ec2-13-235-87-222.ap-south-1.compute.amazonaws.com|
-|London|a|||
-||b|||
-||c|||
-|Montreal|a|||
-||b|||
-||c|||
-|Singapore|a|||
+|London|a|||ec2-3-10-180-172.eu-west-2.compute.amazonaws.com
+||b|||ec2-3-9-181-152.eu-west-2.compute.amazonaws.com
+||c|||ec2-3-11-81-223.eu-west-2.compute.amazonaws.com
+|Montreal|a|||ec2-15-222-15-243.ca-central-1.compute.amazonaws.com
+||b|||ec2-35-183-41-84.ca-central-1.compute.amazonaws.com
+|Singapore|a|||ec2-52-77-217-241.ap-southeast-1.compute.amazonaws.com
 ||b|||
 ||c|||
 |N.Virginia|a|||
@@ -58,9 +57,3 @@ To detach, type `ctrl-a, ctrl-d`
 ||b|||
 ||c|||
 
-## Gathering results
-For ec2s
-
-***Careful to avoid overwriting Time.txt files! Be sure to make file names unique by adding in region and availability zone in the file the file name.***
-
-`scp -i <region>.pem ec2-user@<ec2-host>:Ping-science-fair/Time.txt ./<region>-<AZ>-Time.txt`
