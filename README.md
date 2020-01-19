@@ -53,9 +53,9 @@ To detach, type `ctrl-a, ctrl-d`
 |N.Virginia|a|||
 ||b|||
 ||c|||
-|Tokyo|a|||
-||b|||
-||c|||
+|Tokyo|a||ec2-3-112-220-162.ap-northeast-1.compute.amazonaws.com|
+||c||ec2-18-182-38-146.ap-northeast-1.compute.amazonaws.com|
+||d||ec2-18-177-153-44.ap-northeast-1.compute.amazonaws.com|
 
 ## Gathering results
 For ec2s
