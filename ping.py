@@ -51,9 +51,12 @@ while True:
         IP = Readipfromcountry(InputFile, Country)
 
         for x in IP:
-            #Ping IP address once
-            PingOutput = Ping(x)
-            #Parse Avg. Time from PingOutput
-            Time = ParseTimefromPingOutput(PingOutput)
-            #Write ping time to .txt file (ms)
-            writeresult(Time, Country, OutputFile)
+            try:
+                #Ping IP address once
+                PingOutput = Ping(x)
+                #Parse Avg. Time from PingOutput
+                Time = ParseTimefromPingOutput(PingOutput)
+                #Write ping time to .txt file (ms)
+                writeresult(Time, Country, OutputFile)
+            except:
+                print("exception while pinging " + Country + ": " + x)
