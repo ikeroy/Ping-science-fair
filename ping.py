@@ -58,5 +58,7 @@ while True:
                 Time = ParseTimefromPingOutput(PingOutput)
                 #Write ping time to .txt file (ms)
                 writeresult(Time, Country, OutputFile)
+            except (KeyboardInterrupt, SystemExit):
+                raise
             except:
-                print("exception while pinging " + Country + ": " + x)
+               print("exception while pinging " + Country + ": " + x)
