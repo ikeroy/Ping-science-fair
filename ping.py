@@ -24,6 +24,10 @@ def ParseTimefromPingOutput(PingOutput):
         Y = X[5].split(" = ")
         XX = Y[1].split("ms")
         return int(XX[0])
+     elif platform.system() == 'Darwin':
+        y = X[2]
+        z = y.split(' = ')[1]
+        return float(z.split('/')[1])
      else:
         y = X[3]
         z = y.split(' = ')[1]
