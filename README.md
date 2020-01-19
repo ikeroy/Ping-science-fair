@@ -65,9 +65,9 @@ For ec2s
 
 This oughta do it
 ```
-scp -i syndney.pem ec2-user@ec2-52-63-89-125.ap-southeast-2.compute.amazonaws.com:Ping-science-fair/Time.txt ./syndney-a-Time.txt
-scp -i syndney.pem ec2-user@ec2-54-252-150-92.ap-southeast-2.compute.amazonaws.com:Ping-science-fair/Time.txt ./syndney-b-Time.txt
-scp -i syndney.pem ec2-user@ec2-54-252-153-177.ap-southeast-2.compute.amazonaws.com:Ping-science-fair/Time.txt ./syndney-c-Time.txt
+scp -i sydney.pem ec2-user@ec2-52-63-89-125.ap-southeast-2.compute.amazonaws.com:Ping-science-fair/Time.txt ./sydney-a-Time.txt
+scp -i sydney.pem ec2-user@ec2-54-252-150-92.ap-southeast-2.compute.amazonaws.com:Ping-science-fair/Time.txt ./sydney-b-Time.txt
+scp -i sydney.pem ec2-user@ec2-54-252-153-177.ap-southeast-2.compute.amazonaws.com:Ping-science-fair/Time.txt ./sydney-c-Time.txt
 scp -i sao-paulo.pem ec2-user@ec2-18-231-118-175.sa-east-1.compute.amazonaws.com:Ping-science-fair/Time.txt ./sao-paulo-a-Time.txt
 scp -i sao-paulo.pem ec2-user@ec2-54-94-183-14.sa-east-1.compute.amazonaws.com:Ping-science-fair/Time.txt ./sao-paulo-c-Time.txt
 scp -i hong-kong.pem ec2-user@ec2-18-162-244-94.ap-east-1.compute.amazonaws.com:Ping-science-fair/Time.txt ./hong-kong-a-Time.txt
