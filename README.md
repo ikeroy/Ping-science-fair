@@ -49,7 +49,7 @@ To detach, type `ctrl-a, ctrl-d`
 ||b||ec2-35-183-41-84.ca-central-1.compute.amazonaws.com|
 |Singapore|a||ec2-52-77-217-241.ap-southeast-1.compute.amazonaws.com|
 ||b||ec2-18-138-58-21.ap-southeast-1.compute.amazonaws.com|
-||c|||
+||c||ec2-18-138-228-155.ap-southeast-1.compute.amazonaws.com|
 |N.Virginia|a|||
 ||b|||
 ||c|||
