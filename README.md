@@ -57,3 +57,9 @@ To detach, type `ctrl-a, ctrl-d`
 ||b|||
 ||c|||
 
+## Gathering results
+For ec2s
+
+***Careful to avoid overwriting Time.txt files! Be sure to make file names unique by adding in region and availability zone in the file the file name.***
+
+`scp -i <region>.pem ec2-user@<ec2-host>:Ping-science-fair/Time.txt ./<region>-<AZ>-Time.txt`
