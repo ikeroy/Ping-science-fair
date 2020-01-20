@@ -5,6 +5,9 @@ import time
 from datetime import datetime
 import platform
 
+#Pings an IP
+#IP:string. IP is inserted into the ping command
+#returns the output of the ping command:String
 def Ping(IP):
     #Checks if os is Windows
     if platform.system() == 'Windows':
@@ -12,16 +15,29 @@ def Ping(IP):
     #If it isn't do -c instead of -n
     else:
         return subprocess.check_output("ping " + IP + " -c 1", shell=True).decode()
-
+    
+#Get the IP adresses from this country and this file
+#Filename:String. Is the input filename that contains all the IP adresses
+#Country:The name of a country in the filename
+#Reuturn getVarFromFile(referenced later)
 def Readipfromcountry(filename, Country):
-    return getVarFromFile(Country, filename)
+    #Open IP.py and return the data from the countries
+    data = imp.load_source('data', filename)
+    return data.IPs[Country]
 
+#Write in this file the time it took to ping this country, the country, and the current time
+#Time:Integer/Float/String. Time it took to ping a country
+#Country:String. The country that got pinged
+#File:the file it writes to
+#Returns None
 def writeresult(Time, Country, File):
     with open(File, "a") as f:
         print("{0}, {1}, {2}".format(Time, Country, datetime.now()), file = f)
-
+        
+#Trim output to just Avg.
+#PingOutput:String. The output of the ping command
+#Returns the Avg. time of the ping command
 def ParseTimefromPingOutput(PingOutput):
-    #Trim output to just Avg.
      X = PingOutput.split(",")
      if platform.system() == 'Windows':
         Y = X[5].split(" = ")
@@ -35,13 +51,10 @@ def ParseTimefromPingOutput(PingOutput):
         y = X[3]
         z = y.split(' = ')[1]
         return float(z.split('/')[2])
-
-
-def getVarFromFile(Country, filename):
-    #Open IP.py and return the data from the countries
-    data = imp.load_source('data', filename)
-    return data.IPs[Country]
-
+   
+#Gets all countries from a file
+#Filename:String. The file that contains IP adresses in each country
+#Returns all countries:List of strings
 def GetAllCountries(Filename):
     data = imp.load_source('data', Filename)
     return data.IPs.keys()
