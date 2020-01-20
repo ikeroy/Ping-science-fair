@@ -18,8 +18,8 @@ def Ping(IP):
     
 #Get the IP adresses from this country and this file
 #Filename:String. Is the input filename that contains all the IP adresses
-#Country:The name of a country in the filename
-#Reuturn getVarFromFile(referenced later)
+#Country:String.The name of a country in the filename
+#Reuturn All IP adresses from a country: List of strings
 def Readipfromcountry(filename, Country):
     #Open IP.py and return the data from the countries
     data = imp.load_source('data', filename)
@@ -28,7 +28,7 @@ def Readipfromcountry(filename, Country):
 #Write in this file the time it took to ping this country, the country, and the current time
 #Time:Integer/Float/String. Time it took to ping a country
 #Country:String. The country that got pinged
-#File:the file it writes to
+#File:String. the file it writes to
 #Returns None
 def writeresult(Time, Country, File):
     with open(File, "a") as f:
@@ -36,7 +36,7 @@ def writeresult(Time, Country, File):
         
 #Trim output to just Avg.
 #PingOutput:String. The output of the ping command
-#Returns the Avg. time of the ping command
+#Returns the Avg. time of the ping command:Integer/Float
 def ParseTimefromPingOutput(PingOutput):
      X = PingOutput.split(",")
      if platform.system() == 'Windows':
