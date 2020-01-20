@@ -6,8 +6,10 @@ from datetime import datetime
 import platform
 
 def Ping(IP):
+    #Checks if os is Windows
     if platform.system() == 'Windows':
         return subprocess.check_output("ping " + IP + " -n 1", shell=True).decode()
+    #If it isn't do -c instead of -n
     else:
         return subprocess.check_output("ping " + IP + " -c 1", shell=True).decode()
 
@@ -19,6 +21,7 @@ def writeresult(Time, Country, File):
         print("{0}, {1}, {2}".format(Time, Country, datetime.now()), file = f)
 
 def ParseTimefromPingOutput(PingOutput):
+    #Trim output to just Avg.
      X = PingOutput.split(",")
      if platform.system() == 'Windows':
         Y = X[5].split(" = ")
@@ -35,6 +38,7 @@ def ParseTimefromPingOutput(PingOutput):
 
 
 def getVarFromFile(Country, filename):
+    #Open IP.py and return the data from the countries
     data = imp.load_source('data', filename)
     return data.IPs[Country]
 
@@ -44,6 +48,7 @@ def GetAllCountries(Filename):
 
 OutputFile = "Time.txt"
 InputFile = "IP.py"
+#If the output file exits, remove all the contents
 if os.path.exists(OutputFile):
   os.remove(OutputFile)
 
@@ -62,6 +67,7 @@ while True:
                 Time = ParseTimefromPingOutput(PingOutput)
                 #Write ping time to .txt file (ms)
                 writeresult(Time, Country, OutputFile)
+            #If KeyboardInterrupt is activated, stop the program 
             except (KeyboardInterrupt, SystemExit):
                 raise
             except:
