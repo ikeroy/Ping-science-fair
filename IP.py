@@ -1,6 +1,8 @@
-#List of IP addresses
-#Each IP address is sorted by country
+#Dictionary of IP addresses in diffrent regions
 #Each IP address is known to work
+#Austin is our IP adress
+#All others are AWS servers that we set up to stay on
+#Not all regions had 3 or more avaliablility zones
 IPs = {}
 
 IPs["Austin"]     = [ '136.49.138.91',                                  ]
